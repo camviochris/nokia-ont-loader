@@ -133,7 +133,7 @@ if uploaded_file and location_is_set:
             "device_name": device_name,
             "device_numbers": "MAC=" + input_df["mac"].astype(str) + "|SN=" + input_df["serial"].astype(str),
             "inventory_location": inventory_location,
-            "inventory_status": "unassigned",
+            "inventory_status": "UNASSIGNED",
         })
 
         st.success(f"Successfully processed {len(final_df)} devices.")
